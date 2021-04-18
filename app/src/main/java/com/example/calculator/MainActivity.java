@@ -1,8 +1,6 @@
 package com.example.calculator;
 
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onNumberClick(View view){
-
         Button button = (Button)view;
         numberField.append(button.getText());
 
@@ -54,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onOperationClick(View view){
-
         Button button = (Button)view;
         String op = button.getText().toString();
         String number = numberField.getText().toString();
@@ -72,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void performOperation(Double number, String operation){
-
-
         if(operand ==null){
             operand = number;
         }
